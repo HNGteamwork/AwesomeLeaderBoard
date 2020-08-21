@@ -1,0 +1,32 @@
+@model LeaderboardViewModel
+@{
+ViewData["Title"] = "Leaderboard for HNG Interns";
+}
+<div class="panel panel-default todo-panel">
+<div class="panel-heading">@ViewData["Title"]</div>
+<table class="table table-hover">
+<thead>
+<tr>
+<td>&#x2714;</td>
+<td>Name</td>
+<td>Username</td>
+<td>Email</td>
+<td>Total Points</td>
+
+</tr>
+</thead>
+@foreach (var item in Model.Interns)
+{
+<tr>
+<td>
+<input type="" class="">
+</td>
+<td>@InternsModel.Name</td>
+<td>@item.TotalPoint</td>
+</tr>
+}
+</table>
+<div class="panel-footer add-item-form">
+<!-- TODO: Add item form -->
+</div>
+</div>
